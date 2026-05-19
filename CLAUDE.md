@@ -17,7 +17,13 @@
 - Source integrations live under `src/lib/sources/` — one file per source (ticketmaster, skiddle, dice, ra, axs).
 - Inngest functions live under `src/inngest/`.
 
+## Workflow
+- **PR-based**: all changes after the initial scaffold go through a feature branch + PR, even when self-merged. No commits straight to `main`.
+- Branch naming: `feat/…`, `fix/…`, `chore/…`, `docs/…`.
+- Squash-merge on merge; delete the branch.
+- Write PR descriptions properly — recruiters read this repo's PR history. State the *why*, not just the *what*.
+
 ## Project plan
-The full project plan is at `~/.claude/plans/alright-i-am-thinking-dreamy-quokka.md` (in the home dir, NOT this repo). Summary: aggregator feed for London gigs from multiple sources, then LLM-powered natural-language search, then personalised ranking. MVP is London-only, no auth, no bought-ticket import.
+See [`docs/plan.md`](docs/plan.md). Summary: aggregator feed for London gigs from multiple sources, then LLM-powered natural-language search, then personalised ranking. MVP is London-only, no auth, no bought-ticket import.
 
 @AGENTS.md
